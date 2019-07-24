@@ -8,11 +8,12 @@ name = "html5ever_nif"
 path = "src/lib.rs"
 crate-type = ["dylib"]
 
+[build-dependencies]
+rustler_codegen = { git = "https://github.com/rusterlium/Rustler" }
+
 [dependencies]
-rustler = "^0.18"
-rustler_codegen = "^0.18"
-#rustler = { path = "../../../Rustler/" }
-#rustler_codegen = { path = "../../../Rustler/rustler_codegen/" }
+rustler = { git = "https://github.com/rusterlium/rustler" }
+rustler_codegen = { git = "https://github.com/rusterlium/Rustler" }
 
 html5ever = "0.22"
 markup5ever = "0.7"
